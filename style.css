@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Cl-black: #000000;
+  --Bg: #fcf9ea;
+  --Bg-input-button: #ccc;
+}
+
+body {
+  background-color: var(--Bg);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.erro {
+  display: none;
+}
+
+#input-odd-even {
+  width: 500px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid var(--Cl-black);
+  border-radius: 10px;
+  background-color: var(--Bg-input-button);
+}
+
+.img-odd-or-even {
+  width: 800px;
+  border-radius: 10px;
+}
+
+#input-odd-even::placeholder {
+  color: var(--Cl-black);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#input-odd-even::-webkit-inner-spin-button,
+#input-odd-even::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.res {
+  display: block;
+}
+
+& .btn-check {
+  width: 250px;
+  height: 40px;
+  border: 1px solid var(--Cl-black);
+  border-radius: 10px;
+  color: var(--Cl-black);
+  background-color: var(--Bg-input-button);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 375px) and (max-width: 430px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .img-odd-or-even {
+    width: 300px;
+  }
+
+  #input-odd-even {
+    width: 150px;
+  }
+
+  .btn-check {
+    width: 80px;
+  }
+}
