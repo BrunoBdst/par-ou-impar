@@ -76,7 +76,7 @@ main {
   cursor: pointer;
 }
 
-@media screen and (min-width: 375px) and (max-width: 430px) {
+@media screen and (min-width: 344px) and (max-width: 430px) {
   .title {
     font-size: 30px;
   }
@@ -91,5 +91,11 @@ main {
 
   .btn-check {
     width: 80px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .img-odd-or-even {
+    width: 500px;
   }
 }
